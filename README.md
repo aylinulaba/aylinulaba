@@ -6,7 +6,7 @@ An User Interface (UI) Developer with 10+ years of experience, specializing in A
 </a>
 
 <strong>Design skills:</strong><br>
-[![My Skills](https://skillicons.dev/icons?i=ai,ps,xd,figma,ae,blender,svg,unity)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=ai,ps,xd,figma,svg)](https://skillicons.dev)
 
 <strong>Tech stack:</strong><br>
 [![My Skills](https://skillicons.dev/icons?i=html,css,bootstrap,sass,tailwind,nodejs,react,nextjs,js,jquery,gatsby,firebase,powershell,git,github,docker,mysql,postgres,netlify,php,wordpress,vscode,visualstudio)](https://skillicons.dev)
