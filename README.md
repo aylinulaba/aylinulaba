@@ -4,9 +4,3 @@ An User Interface (UI) Developer with 10+ years of experience, specializing in A
 
 <a href="https://www.linkedin.com/in/aylinulaba/" target="_blank">![linkedin](https://user-images.githubusercontent.com/81568176/220516359-d509f641-18dc-41d0-8a58-bb971d46c1f4.svg)
 </a>
-
-<strong>Design skills:</strong><br>
-[![My Skills](https://skillicons.dev/icons?i=ai,svg,ps,xd,figma)](https://skillicons.dev)
-
-<strong>Tech stack:</strong><br>
-[![My Skills](https://skillicons.dev/icons?i=html,css,bootstrap,sass,tailwind,nodejs,react,nextjs,js,jquery,gatsby,firebase,powershell,git,github,docker,mysql,postgres,netlify,php,wordpress,vscode,visualstudio)](https://skillicons.dev)
