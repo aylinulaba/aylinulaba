@@ -1,40 +1,105 @@
-/* ============ Base Reset ============ */
 *,
 *::before,
 *::after { box-sizing: border-box; }
 html, body { margin: 0; padding: 0; }
 img, svg { display: block; max-width: 100%; }
 
-/* ============ CSS Variables (minimal) ============ */
-/* Not: Tipografi & tüm renk paletini sonraki adımda dolduracağız */
 :root {
-  /* Surfaces */
-  --page-bg: #F1F1F1;      /* Dear Reader – Page BG */
-  --card-bg: #F7F7F8;      /* Dear Reader – Card BG */
+  --brand-50:#FFF1F3; --brand-100:#FFE3E6; --brand-200:#FFC7CD; --brand-300:#FF9AA4; --brand-400:#FF6E7E; --brand-500:#FF4D5D; --brand-600:#EB3E4F; --brand-700:#C72E3E; --brand-800:#8F222D; --brand-900:#6E1A23;
+  --secondary-300:#7EEC29; --secondary-400:#52D67D; --secondary-500:#36C3A1; --secondary-600:#2AA487; --secondary-700:#1DB874;
+  --accent-300:#FFD166; --accent-400:#FFC145; --accent-500:#FFB703; --accent-600:#D69200; --accent-700:#BB7400;
 
-  /* Text */
-  --text-primary: #0F1215; /* Dante’s Daydream – Primary */
-  --text-secondary: #3A3F45;
+  --neutral-50:#F7F7F8; --neutral-100:#EFEFF1; --neutral-200:#E3E4E7; --neutral-300:#D2D4D8; --neutral-400:#A9AFB6; --neutral-500:#8B929A; --neutral-600:#6C757E; --neutral-700:#3A3F45; --neutral-800:#262A2F; --neutral-900:#1D2125;
 
-  /* Brand (preview) */
-  --brand-primary: #FF4D5D;  /* Corrupted Monk (default) */
+  --text-primary:#0F1215; --text-secondary:#3A3F45; --text-muted:#6C757E; --text-on-primary:#FFFFFF;
 
-  /* Typography placeholders (gerçek fontlar sonraki aşamada) */
-  --font-sans-1: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  --font-sans-2: var(--font-sans-1);
-  --font-sans-3: var(--font-sans-1);
+  --surface-page:#F1F1F1; --surface-card:#F7F7F8; --surface-elevated:#EFEFF1;
 
-  /* Spacing scale (örnek) */
-  --space-1: 4px;
-  --space-2: 8px;
-  --space-3: 12px;
-  --space-4: 16px;
-  --space-5: 24px;
+  --border-subtle:#E3E4E7; --border-strong:#A9AFB6;
+
+  --success-bg:#E6F8F0; --success-ink:#1E8C5A;
+  --warning-bg:#FFF8E6; --warning-ink:#BB7400;
+  --error-bg:#FFE8EA; --error-ink:#C72E3E;
+  --info-bg:#E6F4FF; --info-ink:#176FAF;
+
+  --btn-primary:var(--brand-500); --btn-primary-hover:var(--brand-600); --btn-primary-active:var(--brand-700); --btn-primary-focus:#FFB3BB;
+  --btn-secondary:var(--secondary-500); --btn-secondary-hover:var(--secondary-600); --btn-secondary-active:var(--secondary-700);
+  --btn-ghost-text:var(--brand-500); --btn-ghost-hover:var(--brand-50);
+
+  --overlay-700:rgba(13,16,19,.7);
+  --overlay-500:rgba(13,16,19,.5);
+  --divider:var(--neutral-200);
+
+  --h1-size:48px; --h1-lh:58px; --h1-ls:-0.01em; --h1-weight:700;
+  --h2-size:32px; --h2-lh:40px; --h2-ls:-0.005em; --h2-weight:600;
+  --h3-size:24px; --h3-lh:30px; --h3-ls:0em; --h3-weight:600;
+  --h4-size:20px; --h4-lh:26px; --h4-ls:0em; --h4-weight:600;
+
+  --body-lg-size:20px; --body-lg-lh:32px; --body-lg-weight:400;
+  --body-md-size:16px; --body-md-lh:24px; --body-md-weight:400;
+  --body-sm-size:14px; --body-sm-lh:20px; --body-sm-weight:400;
+
+  --label-btn-size:16px; --label-btn-lh:24px; --label-btn-weight:500; --label-btn-ls:0.01em;
+  --label-field-size:14px; --label-field-lh:20px; --label-field-weight:500; --label-field-ls:0.01em;
+  --label-badge-size:14px; --label-badge-lh:20px; --label-badge-weight:700; --label-badge-ls:0.02em;
+
+  --nav-top-size:14px; --nav-top-lh:20px; --nav-top-weight:500; --nav-top-ls:0.01em;
+  --breadcrumb-size:12px; --breadcrumb-lh:16px; --breadcrumb-weight:500; --breadcrumb-ls:0.03em;
+
+  --table-th-size:14px; --table-th-lh:20px; --table-th-weight:500; --table-th-ls:0.02em;
+  --table-td-size:14px; --table-td-lh:20px; --table-td-weight:400;
+
+  --caption-size:12px; --caption-lh:16px; --caption-weight:400;
+  --overline-size:12px; --overline-lh:16px; --overline-weight:500; --overline-ls:0.05em;
+
+  --kpi-size:32px; --kpi-lh:36px; --kpi-weight:600;
+
+  --font-sans-1:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --font-sans-2:var(--font-sans-1);
+  --font-sans-3:var(--font-sans-1);
+
+  --space-1:4px; --space-2:8px; --space-3:12px; --space-4:16px; --space-5:24px;
 }
 
-/* ============ Page Scaffolding ============ */
+@media (max-width:1024px){
+  :root{
+    --h1-size:40px; --h1-lh:50px;
+    --h2-size:28px; --h2-lh:36px;
+    --h3-size:22px; --h3-lh:28px;
+    --h4-size:18px; --h4-lh:24px;
+    --body-lg-size:20px; --body-lg-lh:32px;
+    --body-md-size:16px; --body-md-lh:24px;
+    --body-sm-size:14px; --body-sm-lh:20px;
+    --label-btn-size:16px; --label-btn-lh:24px;
+    --label-badge-size:14px; --label-badge-lh:20px;
+    --nav-top-size:14px; --nav-top-lh:20px;
+    --breadcrumb-size:12px; --breadcrumb-lh:16px;
+    --table-th-size:14px; --table-th-lh:20px;
+    --caption-size:12px; --caption-lh:16px;
+    --kpi-size:28px; --kpi-lh:32px;
+  }
+}
+@media (max-width:768px){
+  :root{
+    --h1-size:32px; --h1-lh:40px;
+    --h2-size:24px; --h2-lh:32px;
+    --h3-size:20px; --h3-lh:26px;
+    --h4-size:16px; --h4-lh:22px;
+    --body-lg-size:18px; --body-lg-lh:28px;
+    --body-md-size:14px; --body-md-lh:20px;
+    --body-sm-size:12px; --body-sm-lh:18px;
+    --label-btn-size:14px; --label-btn-lh:20px;
+    --label-badge-size:12px; --label-badge-lh:18px;
+    --nav-top-size:12px; --nav-top-lh:18px;
+    --breadcrumb-size:11px; --breadcrumb-lh:15px;
+    --table-th-size:12px; --table-th-lh:18px;
+    --caption-size:11px; --caption-lh:15px;
+    --kpi-size:24px; --kpi-lh:28px;
+  }
+}
+
 body {
-  background: var(--page-bg);
+  background: var(--surface-page);
   color: var(--text-primary);
   font-family: var(--font-sans-1);
   line-height: 1.5;
@@ -44,12 +109,12 @@ main {
   max-width: 960px;
   margin: 10vh auto;
   padding: var(--space-5);
-  background: var(--card-bg);
+  background: var(--surface-card);
   border-radius: 12px;
 }
 
 h1 {
   margin: 0 0 var(--space-3);
-  font-size: 2rem; /* geçici */
-  font-weight: 700; /* geçici */
+  font-size: 2rem;
+  font-weight: 700;
 }
