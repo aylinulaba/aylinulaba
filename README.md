@@ -1,4 +1,4 @@
-# 🌟 Portfolio
+# 🚀 Portfolio
 
 This repository contains the codebase for my personal portfolio website.
 
@@ -45,7 +45,7 @@ All tokens are stored in `styles.css` as **CSS custom properties** (`--color-…
 - **Lucide Icons** are integrated via ESM in `app.js`.  
   Example usage (not active in `index.html` yet):
   ```html
-  <i data-lucide="heart"></i>
+  <i data-lucide="pizza"></i>
 
 ---
 
