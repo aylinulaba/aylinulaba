@@ -1,0 +1,55 @@
+/* ============ Base Reset ============ */
+*,
+*::before,
+*::after { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+img, svg { display: block; max-width: 100%; }
+
+/* ============ CSS Variables (minimal) ============ */
+/* Not: Tipografi & tüm renk paletini sonraki adımda dolduracağız */
+:root {
+  /* Surfaces */
+  --page-bg: #F1F1F1;      /* Dear Reader – Page BG */
+  --card-bg: #F7F7F8;      /* Dear Reader – Card BG */
+
+  /* Text */
+  --text-primary: #0F1215; /* Dante’s Daydream – Primary */
+  --text-secondary: #3A3F45;
+
+  /* Brand (preview) */
+  --brand-primary: #FF4D5D;  /* Corrupted Monk (default) */
+
+  /* Typography placeholders (gerçek fontlar sonraki aşamada) */
+  --font-sans-1: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-sans-2: var(--font-sans-1);
+  --font-sans-3: var(--font-sans-1);
+
+  /* Spacing scale (örnek) */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+}
+
+/* ============ Page Scaffolding ============ */
+body {
+  background: var(--page-bg);
+  color: var(--text-primary);
+  font-family: var(--font-sans-1);
+  line-height: 1.5;
+}
+
+main {
+  max-width: 960px;
+  margin: 10vh auto;
+  padding: var(--space-5);
+  background: var(--card-bg);
+  border-radius: 12px;
+}
+
+h1 {
+  margin: 0 0 var(--space-3);
+  font-size: 2rem; /* geçici */
+  font-weight: 700; /* geçici */
+}
