@@ -3,33 +3,211 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Portfolio</title>
+  <title>Portfolio – DS Demo</title>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700&family=Nunito+Sans:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-  <main>
-    <div class="h1">Heading 1 – Plus Jakarta Sans 700</div>
-    <div class="h2">Heading 2 – Nunito Sans 600</div>
-    <div class="h3">Heading 3 – Nunito Sans 600</div>
-    <div class="h4">Heading 4 – Nunito Sans 600</div>
+  <header class="nav">
+    <div class="nav__brand">
+      <span class="logo">A</span>
+      <span class="nav__title">Portfolio</span>
+    </div>
+    <nav class="nav__links">
+      <a class="nav-top link" href="#">Home</a>
+      <a class="nav-top link" href="#">Work</a>
+      <a class="nav-top link" href="#">About</a>
+      <a class="nav-top link" href="#">Contact</a>
+    </nav>
+  </header>
 
-    <div class="body-lg">Body Large – Inter 20/32</div>
-    <div class="body-md">Body Default – Inter 16/24</div>
-    <div class="body-sm">Body Small – Inter 14/20</div>
+  <main class="container">
+    <section class="card">
+      <div class="h1">Typography</div>
+      <div class="h2 m-top-3">Headings</div>
+      <div class="stack-2">
+        <div class="h1">Heading 1</div>
+        <div class="h2">Heading 2</div>
+        <div class="h3">Heading 3</div>
+        <div class="h4">Heading 4</div>
+      </div>
+      <div class="h2 m-top-4">Body</div>
+      <div class="stack-1">
+        <div class="body-lg">Body Large</div>
+        <div class="body-md">Body Default</div>
+        <div class="body-sm">Body Small</div>
+      </div>
+      <div class="h2 m-top-4">UI Labels</div>
+      <div class="stack-1">
+        <div class="label-btn">Button Label</div>
+        <div class="label-field">Field Label</div>
+        <div class="label-badge">Badge Label</div>
+        <div class="nav-top">Top Nav Link</div>
+        <div class="breadcrumb">Breadcrumb</div>
+        <div class="table-th">Table Header</div>
+        <div class="table-td">Table Cell</div>
+        <div class="caption">Caption</div>
+        <div class="overline">Overline</div>
+        <div class="kpi">KPI / Stat</div>
+      </div>
+    </section>
 
-    <div class="label-btn">Button Label – Inter 16/24</div>
-    <div class="label-field">Field Label – Inter 14/20</div>
-    <div class="label-badge">Badge Label – Inter 14/20</div>
+    <section class="card">
+      <div class="h2">Buttons</div>
+      <div class="row">
+        <button class="btn">Primary</button>
+        <button class="btn" disabled>Primary Disabled</button>
+        <button class="btn-secondary">Secondary</button>
+        <button class="btn-secondary" disabled>Secondary Disabled</button>
+        <button class="btn-ghost">Ghost</button>
+      </div>
+      <div class="row m-top-2">
+        <a href="#" class="btn with-icon">
+          <i data-lucide="arrow-right"></i>
+          Continue
+        </a>
+        <button class="btn-secondary with-icon">
+          <i data-lucide="external-link"></i>
+          Visit
+        </button>
+        <button class="btn-ghost with-icon">
+          <i data-lucide="star"></i>
+          Save
+        </button>
+      </div>
+    </section>
 
-    <div class="nav-top">Top Nav Link – Inter 14/20</div>
-    <div class="breadcrumb">Breadcrumb – Inter 12/16</div>
-    <div class="table-th">Table Header – Inter 14/20</div>
-    <div class="table-td">Table Cell – Inter 14/20</div>
-    <div class="caption">Caption – Inter 12/16</div>
-    <div class="overline">Overline – Inter 12/16</div>
-    <div class="kpi">KPI / Stat – Nunito Sans 32/36</div>
+    <section class="card">
+      <div class="h2">Inputs</div>
+      <div class="grid-2">
+        <div>
+          <label class="label-field" for="name">Name</label>
+          <input class="input" id="name" placeholder="Your name" />
+          <div class="helper">Helper text</div>
+        </div>
+        <div>
+          <label class="label-field" for="email">Email</label>
+          <input class="input" id="email" placeholder="name@mail.com" />
+          <div class="error">This field is required</div>
+        </div>
+        <div>
+          <label class="label-field" for="role">Role</label>
+          <select class="select" id="role">
+            <option>Product Designer</option>
+            <option>Frontend Engineer</option>
+            <option>PM</option>
+          </select>
+        </div>
+        <div>
+          <label class="label-field" for="msg">Message</label>
+          <textarea class="textarea" id="msg" placeholder="Write here"></textarea>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="h2">Badges</div>
+      <div class="row">
+        <span class="badge">Default</span>
+        <span class="badge success">Success</span>
+        <span class="badge warning">Warning</span>
+        <span class="badge error">Error</span>
+        <span class="badge info">Info</span>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="h2">Alerts</div>
+      <div class="stack-2">
+        <div class="alert success">
+          <i data-lucide="check-circle"></i>
+          <div>
+            <div class="label-field">Success</div>
+            <div class="body-sm">All good</div>
+          </div>
+        </div>
+        <div class="alert warning">
+          <i data-lucide="alert-triangle"></i>
+          <div>
+            <div class="label-field">Warning</div>
+            <div class="body-sm">Be careful</div>
+          </div>
+        </div>
+        <div class="alert error">
+          <i data-lucide="alert-circle"></i>
+          <div>
+            <div class="label-field">Error</div>
+            <div class="body-sm">Something failed</div>
+          </div>
+        </div>
+        <div class="alert info">
+          <i data-lucide="info"></i>
+          <div>
+            <div class="label-field">Info</div>
+            <div class="body-sm">Heads up</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="h2">Table</div>
+      <table class="table">
+        <thead>
+          <tr>
+            <th class="table-th">Name</th>
+            <th class="table-th">Role</th>
+            <th class="table-th">Contact</th>
+            <th class="table-th">Links</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="table-td">Alex</td>
+            <td class="table-td">Designer</td>
+            <td class="table-td"><i data-lucide="mail"></i> alex@ex.com</td>
+            <td class="table-td">
+              <a class="link with-icon" href="#"><i data-lucide="github"></i>GitHub</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="table-td">Mina</td>
+            <td class="table-td">FE</td>
+            <td class="table-td"><i data-lucide="mail"></i> mina@ex.com</td>
+            <td class="table-td">
+              <a class="link with-icon" href="#"><i data-lucide="linkedin"></i>LinkedIn</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="card">
+      <div class="h2">Color Swatches</div>
+      <div class="swatches">
+        <div class="swatch bg-brand-500">brand-500</div>
+        <div class="swatch bg-secondary-500">secondary-500</div>
+        <div class="swatch bg-accent-500">accent-500</div>
+        <div class="swatch bg-neutral-900 light">neutral-900</div>
+        <div class="swatch bg-success">success</div>
+        <div class="swatch bg-warning">warning</div>
+        <div class="swatch bg-error">error</div>
+        <div class="swatch bg-info">info</div>
+      </div>
+    </section>
   </main>
+
+  <footer class="footer">
+    <div class="body-sm">© 2025 Portfolio</div>
+    <div class="row">
+      <a class="link with-icon" href="#"><i data-lucide="github"></i>GitHub</a>
+      <a class="link with-icon" href="#"><i data-lucide="linkedin"></i>LinkedIn</a>
+      <a class="link with-icon" href="#"><i data-lucide="mail"></i>Mail</a>
+    </div>
+  </footer>
+
   <script src="assets/js/main.js"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>lucide.createIcons();</script>
 </body>
 </html>
