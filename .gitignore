@@ -1,2 +1,7 @@
+# macOS
 .DS_Store
-*.log
+
+# Node / tools
+node_modules/
+dist/
+build/
