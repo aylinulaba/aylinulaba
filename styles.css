@@ -129,7 +129,6 @@
     --h2-size: 28px; --h2-line: 36px;
     --h3-size: 22px; --h3-line: 28px;
     --h4-size: 18px; --h4-line: 24px;
-
     --num-kpi-size: 28px; --num-kpi-line: 32px;
   }
 }
@@ -140,11 +139,9 @@
     --h2-size: 24px; --h2-line: 32px;
     --h3-size: 20px; --h3-line: 26px;
     --h4-size: 16px; --h4-line: 22px;
-
     --body-lg-size: 18px; --body-lg-line: 28px;
     --body-md-size: 14px; --body-md-line: 20px;
     --body-sm-size: 12px; --body-sm-line: 18px;
-
     --nav-toplink-size: 12px; --nav-toplink-line: 18px;
     --nav-breadcrumb-size: 11px; --nav-breadcrumb-line: 15px;
     --table-header-size: 12px; --table-header-line: 18px;
@@ -157,6 +154,7 @@
 
 html {
   background: var(--surface-page);
+  scroll-behavior: smooth;
 }
 
 * { box-sizing: border-box; }
