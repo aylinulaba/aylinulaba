@@ -9,7 +9,7 @@
   margin: var(--page-gap);
   margin-left: var(--page-gap);
   min-height: calc(100vh - (var(--page-gap) * 2));
-  background: #000000;
+  background: var(--logo-primary);
   border-radius: var(--hero-radius);
   display: grid;
   place-items: center;
@@ -21,6 +21,16 @@
 }
 
 .hero-content { text-align: center; }
+
+.hero-illustration {
+  display: block;
+  height: auto;
+  max-width: none;
+  width: calc(100% + 4rem);
+  margin-left: -2rem;
+  margin-right: -2rem;
+  object-fit: contain;
+}
 
 .brand-banner {
   position: fixed;
