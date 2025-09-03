@@ -14,12 +14,82 @@
   <link rel="stylesheet" href="./custom.css" />
 </head>
 <body>
-  <aside class="brand-rail">
-    <a href="/" class="brand-rail__link">
-      <img class="brand-rail__symbol" src="assets/images/symbol.png" alt="symbol" />
-    </a>
-  </aside>
-  <div class="hero-box">Hello world</div>
+  <a href="/" class="brand-banner">
+    <img class="brand-banner__symbol" src="assets/images/symbol.png" alt="symbol" />
+    <span class="brand-banner__text">
+      <span class="logo-small">House of</span>
+      <span class="logo-big">Aylin</span>
+    </span>
+  </a>
+
+  <div class="hero-box">
+    <nav class="menu menu--default">
+      <div class="menu-section">
+        <h3>Repertoire</h3>
+        <ul>
+          <li><a href="#">essentials</a></li>
+          <li><a href="#">essays</a></li>
+          <li><a href="#">weekly</a></li>
+        </ul>
+      </div>
+      <div class="menu-section">
+        <h3>Créative</h3>
+        <ul>
+          <li><a href="#">mixtapes</a></li>
+          <li><a href="#">books</a></li>
+          <li><a href="#">quotes</a></li>
+        </ul>
+      </div>
+      <div class="menu-section">
+        <h3>Narrative</h3>
+        <ul>
+          <li><a href="#">the praxis</a></li>
+          <li><a href="#">artifacts</a></li>
+          <li><a href="#">archive</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="menu-bar">
+      <span class="menu-bar__brand">
+        <img class="menu-bar__symbol" src="assets/images/symbol-red.png" alt="symbol" />
+        <span class="menu-bar__logo">
+          <span class="logo-small">House of</span>
+          <span class="logo-big">Aylin</span>
+        </span>
+      </span>
+      <button class="menu-bar__toggle" id="menuToggle">☰</button>
+    </div>
+
+    <div class="menu-overlay" id="menuOverlay">
+      <div class="menu-overlay__header">
+        <span class="menu-overlay__brand">
+          <img class="menu-overlay__symbol" src="assets/images/symbol-red.png" alt="symbol" />
+          <span class="menu-overlay__logo">
+            <span class="logo-small">House of</span>
+            <span class="logo-big">Aylin</span>
+          </span>
+        </span>
+        <button class="menu-overlay__close" id="menuClose">×</button>
+      </div>
+
+      <ul class="menu-overlay__list">
+        <li><a href="#">Essentials</a></li>
+        <li><a href="#">Essays</a></li>
+        <li><a href="#">Weekly</a></li>
+        <li><a href="#">Mixtapes</a></li>
+        <li><a href="#">Books</a></li>
+        <li><a href="#">Quotes</a></li>
+        <li><a href="#">The Praxis</a></li>
+        <li><a href="#">Artifacts</a></li>
+        <li><a href="#">Archive</a></li>
+      </ul>
+
+      <a href="#" class="menu-overlay__cta">Join my newsletter</a>
+    </div>
+
+    <div class="hero-content">Hello world</div>
+  </div>
   <script type="module" src="./app.js"></script>
 </body>
 </html>
