@@ -39,3 +39,36 @@ document.addEventListener('keydown', (e) => {
     document.body.classList.remove('overlay-open');
   }
 });
+
+const indexButton = document.getElementById('indexButton');
+const indexMenu = document.getElementById('indexMenu');
+const indexClose = document.getElementById('indexClose');
+
+if (indexButton && indexMenu) {
+  indexButton.addEventListener('click', () => {
+    indexMenu.classList.add('active');
+  });
+}
+
+if (indexClose && indexMenu) {
+  indexClose.addEventListener('click', () => {
+    indexMenu.classList.remove('active');
+  });
+}
+
+if (indexMenu) {
+  indexMenu.addEventListener('click', (e) => {
+    const inner = e.target.closest('.index-menu__inner');
+    if (!inner) indexMenu.classList.remove('active');
+  });
+}
+
+const onScroll = () => {
+  if (window.scrollY > 140) {
+    document.body.classList.add('scrolled');
+  } else {
+    document.body.classList.remove('scrolled');
+  }
+};
+onScroll();
+window.addEventListener('scroll', onScroll);

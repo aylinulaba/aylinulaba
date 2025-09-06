@@ -159,10 +159,12 @@ html {
 
 * { box-sizing: border-box; }
 html, body { height: 100%; margin: 0; }
+
 body {
   font-family: var(--font-body);
   color: var(--text-primary);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+  background: var(--surface-page);
 }
