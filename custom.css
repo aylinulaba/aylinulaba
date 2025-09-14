@@ -227,14 +227,6 @@
   margin: 0;
   color: var(--neutral-50);
 }
-.work-desc {
-  font-family: var(--font-body);
-  color: var(--neutral-200);
-  margin: 0;
-  font-size: 0.95rem;
-  line-height: 1.7;
-  word-wrap: break-word;
-}
 
 @media (max-width: 900px) {
   .work-meta { grid-template-columns: 1fr; }
@@ -619,11 +611,6 @@
   margin: -0.25rem 0 1rem;
 }
 
-.work-stack {
-  margin-top: -0.90rem;
-  line-height: 1.3;
-}
-
 .work-box--right .work-section {
   display: flex;
   flex-direction: column;
@@ -642,29 +629,41 @@
   text-align: left;
 }
 
-.second-work-box { background: #0F1C2A!important; }
+.first-work-box { background: #2C1F50!important; }
 
-.third-work-box { background: #0E2A47!important; }
+.second-work-box { background: #353535!important; }
 
-.fourth-work-box { background: #0D3A4A!important; }
+.third-work-box { background: #634d20!important; }
 
-.fifth-work-box { background: #103B2E!important; }
+.fourth-work-box { background: #332A1F!important; }
 
-.sixth-work-box { background: #1A3A1F!important; }
+.fifth-work-box { background: #2B0D03!important; }
 
-.seventh-work-box { background: #2A2F14!important; }
+.sixth-work-box { background: #2D1308!important; }
 
-.eighth-work-box { background: #3A2612!important; }
+.seventh-work-box { background: #581B17!important; }
 
-.ninth-work-box { background: #44181E!important; }
+.eighth-work-box { background: #1f456d!important; }
 
-.tenth-work-box { background: #3A1533!important; }
+.ninth-work-box { background: #6B194F!important; }
 
-.eleventh-work-box { background: #25143F!important; }
+.tenth-work-box { background: #242716!important; }
 
-.twelfth-work-box { background: #141F46!important; }
+.eleventh-work-box { background: #772A42!important; }
 
-.thirteenth-work-box { background: #0F1215!important; }
+.twelfth-work-box { background: #110D02!important; }
+
+.thirteenth-work-box { background: #414141!important; }
+
+.fourteenth-work-box { background: #262626!important; }
+
+.fifteenth-work-box { background: #931e2e!important; }
+
+.sixteenth-work-box { background: #41556D!important; }
+
+.seventeenth-work-box { background: #773d54!important; }
+
+.eighteenth-work-box { background: #0F1214!important; }
 
 .footer-box {
   margin: 0 var(--page-gap) 0 var(--page-gap);
