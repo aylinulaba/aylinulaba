@@ -859,8 +859,12 @@
   }
 }
 
-.project-detail-hero {
-  background: #4a5565;
+.first-project-hero {
+  background: #525252;
+}
+
+.second-project-hero {
+  background: #45556c;
 }
 
 .project-first-img {
