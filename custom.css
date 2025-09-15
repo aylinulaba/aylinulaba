@@ -882,7 +882,7 @@
 }
 
 .seventh-project-hero {
-  background: #201F1B;
+  background: #18181b;
 }
 
 .eighth-project-hero {
@@ -894,11 +894,11 @@
 }
 
 .tenth-project-hero {
-  background: #47590e;
+  background: #253201;
 }
 
 .eleventh-project-hero {
-  background: #2b19be;
+  background: #59168b;
 }
 
 .twelfth-project-hero {
@@ -910,11 +910,11 @@
 }
 
 .fourteenth-project-hero {
-  background: #45556c;
+  background: #432004;
 }
 
 .fifteenth-project-hero {
-  background: #404040;
+  background: #171717;
 }
 
 .sixteenth-project-hero {
@@ -931,4 +931,20 @@
   display: block;
   margin: 10rem auto 2rem;
   border-radius: 12px;
+}
+
+.project-img-medium {
+  width: 50%;
+}
+
+.project-img-small {
+  width: 40%!important;
+}
+
+.project-img-smaller {
+  width: 30%!important;
+}
+
+.project-img-smallest {
+  width: 20%!important;
 }
