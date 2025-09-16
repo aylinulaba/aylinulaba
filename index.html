@@ -2,727 +2,145 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Aylin Ulaba - Designer (Graphic, UI/UX) & UI Developer - House of Aylin Ulaba</title>
-  <meta name="description" content="Welcome to my house!" />
-  <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
-  <link rel="icon" href="assets/favicon.png" type="image/x-icon">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito+Sans:wght@600;700&family=Plus+Jakarta+Sans:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles.css" />
-  <link rel="stylesheet" href="./custom.css" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Aylin Ulaba - Designer (Graphic, UI/UX) & UI Developer</title>
+  <meta name="description" content="Working on it..." />
+  <style>
+    :root{
+      --bg:#0e0f12;
+      --fg:#e7e8ea;
+      --fg-muted:#bfc3c8;
+      --fg-hover:#ffffff;
+    }
+    html,body{height:100%}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--fg);
+      font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      -webkit-font-smoothing:antialiased;
+      text-rendering:optimizeLegibility;
+    }
+
+    .wrap{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      gap:28px;
+      text-align:center;
+      padding:24px;
+    }
+
+    .title{
+      font-size:clamp(12px, 2vw, 18px);
+      font-weight:400;
+      letter-spacing:.2px;
+      display:flex;
+      align-items:baseline;
+      justify-content:center;
+      gap:.1ch;
+      white-space:nowrap;
+    }
+
+    .dots{
+      display:inline-flex;
+      gap:.2ch;
+      margin-left:.2ch;
+    }
+    .dot{
+      width:.20em; height:.20em; border-radius:50%;
+      background:currentColor; opacity:.2;
+      animation: blink 1.4s infinite;
+    }
+    .dot:nth-child(1){ animation-delay:0s }
+    .dot:nth-child(2){ animation-delay:.2s }
+    .dot:nth-child(3){ animation-delay:.4s }
+
+    @keyframes blink{
+      0%,20% { opacity:.2; transform:translateY(0) }
+      30%,50%{ opacity:1;  transform:translateY(-1px) }
+      60%,100%{ opacity:.2; transform:translateY(0) }
+    }
+
+    @media (prefers-reduced-motion: reduce){
+      .dot{ animation:none; opacity:.5 }
+    }
+
+    .social{
+      display:flex; gap:12px;
+    }
+    .social a{
+      display:inline-flex; align-items:center; justify-content:center;
+      width:32px; height:32px; border-radius:8px;
+      color:var(--fg-muted);
+      background:rgba(255,255,255,.03);
+      border:1px solid rgba(255,255,255,.06);
+      transition:transform .18s ease, color .18s ease, background .18s ease, border-color .18s ease;
+      outline: none;
+    }
+    .social a:hover,
+    .social a:focus-visible{
+      color:var(--fg-hover);
+      background:rgba(255,255,255,.06);
+      border-color:rgba(255,255,255,.14);
+      transform:translateY(-2px);
+    }
+    .social svg{
+      width:16px; height:16px; fill:currentColor;
+    }
+
+    .sr-only{
+      position:absolute; width:1px; height:1px; padding:0; margin:-1px;
+      overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0;
+    }
+
+    footer{
+      font-size:.9rem; color:var(--fg-muted);
+    }
+  </style>
 </head>
 <body>
-  <a href="/" class="brand-banner">
-    <img class="brand-banner__symbol" src="assets/images/symbol-white.png" alt="symbol" />
-    <span class="brand-banner__text">
-      <span class="logo-small">House of</span>
-      <span class="logo-big">Aylin</span>
-    </span>
-  </a>
+  <main class="wrap" role="main" aria-label="Coming Soon">
+    <h1 class="title">
+      working on it
+      <span aria-hidden="true" class="dots">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </span>
+      <span class="sr-only">working on it…</span>
+    </h1>
 
-  <div class="hero-box">
-    <nav class="menu menu--default">
-      <div class="menu-section">
-        <h3>Repertoire</h3>
-        <ul>
-          <li><a href="soon.html">essentials</a></li>
-          <li><a href="soon.html">essays</a></li>
-          <li><a href="soon.html">the weekly</a></li>
-        </ul>
-      </div>
-      <div class="menu-section">
-        <h3>Créative</h3>
-        <ul>
-          <li><a href="soon.html">mixtapes</a></li>
-          <li><a href="soon.html">books & films</a></li>
-          <li><a href="soon.html">quotes</a></li>
-        </ul>
-      </div>
-      <div class="menu-section">
-        <h3>Narrative</h3>
-        <ul>
-          <li><a href="soon.html">the praxis</a></li>
-          <li><a href="soon.html">artifacts</a></li>
-          <li><a href="soon.html">archive</a></li>
-        </ul>
-      </div>
+    <nav class="social" aria-label="Social profiles">
+      <!-- LinkedIn -->
+      <a href="https://linkedin.com/in/aylinulaba" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8.5H4.5V23H.5zM8.5 8.5H12v2h.05c.49-.93 1.69-1.91 3.48-1.91 3.72 0 4.41 2.45 4.41 5.64V23h-4v-6.18c0-1.47-.03-3.36-2.05-3.36-2.05 0-2.36 1.6-2.36 3.25V23h-4z"/>
+        </svg>
+        <span class="sr-only">LinkedIn</span>
+      </a>
+
+      <!-- GitHub -->
+      <a href="https://github.com/aylinulaba" target="_blank" rel="noopener" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2c-3.34.73-4.04-1.42-4.04-1.42-.55-1.4-1.34-1.77-1.34-1.77-1.1-.75.08-.74.08-.74 1.22.09 1.87 1.25 1.87 1.25 1.08 1.85 2.83 1.32 3.52 1.01.11-.79.42-1.32.76-1.62-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.67 1.65.24 2.87.12 3.17.77.84 1.23 1.91 1.23 3.22 0 4.61-2.82 5.62-5.5 5.92.43.38.81 1.12.81 2.26v3.35c0 .32.22.7.82.58A12 12 0 0 0 12 .5z"/>
+        </svg>
+        <span class="sr-only">GitHub</span>
+      </a>
+
+      <!-- Medium -->
+      <a href="https://medium.com/@aylinulaba" target="_blank" rel="noopener" aria-label="Medium">
+        <svg viewBox="0 0 1043.63 592.71" aria-hidden="true">
+          <path d="M588.67 296.35c0 163.7-131.69 296.35-294.33 296.35S0 460.05 0 296.35 131.69 0 294.33 0s294.34 132.65 294.34 296.35zm329.44 0c0 154.2-66.39 279.22-148.29 279.22S621.53 450.55 621.53 296.35 687.92 17.13 769.82 17.13s148.29 125.02 148.29 279.22zm125.52 0c0 140.04-22.39 253.54-50.01 253.54-27.62 0-50.02-113.5-50.02-253.54S966 42.81 993.62 42.81c27.62 0 50.01 113.5 50.01 253.54z"/>
+        </svg>
+        <span class="sr-only">Medium</span>
+      </a>
     </nav>
 
-    <div class="menu-bar">
-      <span class="menu-bar__brand">
-        <img class="menu-bar__symbol" src="assets/images/symbol-red.png" alt="symbol" />
-        <span class="menu-bar__logo">
-          <span class="logo-small">House of</span>
-          <span class="logo-big">Aylin</span>
-        </span>
-      </span>
-      <button class="menu-bar__toggle" id="menuToggle">☰</button>
-    </div>
+  </main>
 
-    <div class="menu-overlay" id="menuOverlay">
-      <div class="menu-overlay__header">
-        <span class="menu-overlay__brand">
-          <img class="menu-overlay__symbol" src="assets/images/symbol-red.png" alt="symbol" />
-          <span class="menu-overlay__logo">
-            <span class="logo-small">House of</span>
-            <span class="logo-big">Aylin</span>
-          </span>
-        </span>
-        <button class="menu-overlay__close" id="menuClose">×</button>
-      </div>
-
-      <ul class="menu-overlay__list">
-        <li><a href="soon.html">Essentials</a></li>
-        <li><a href="soon.html">Essays</a></li>
-        <li><a href="soon.html">The Weekly</a></li>
-        <li><a href="soon.html">Mixtapes</a></li>
-        <li><a href="soon.html">Books & Films</a></li>
-        <li><a href="soon.html">Quotes</a></li>
-        <li><a href="soon.html">The Praxis</a></li>
-        <li><a href="soon.html">Artifacts</a></li>
-        <li><a href="soon.html">Archive</a></li>
-      </ul>
-
-      <a href="soon.html" class="menu-overlay__cta">Join my newsletter</a>
-    </div>
-
-    <img src="assets/images/aylin.png" alt="Aylin illustration" class="hero-illustration" />
-  </div>
-
-  <div class="second-box">
-    <div class="second-hero">
-      <p class="second-hero__line second-hero__line--bold">I CREATE</p>
-      <p class="second-hero__line">HUMAN-CENTERED</p>
-      <p class="second-hero__line second-hero__line--bold">EXPERIENCES</p>
-      <p class="second-hero__sub">DESIGN PRAXIS EST. 2010</p>
-    </div>
-  </div>
-
-  <div class="third-box">
-    <div class="bio-section">
-      <div class="bio-text">
-        <p>As a Designer and User Interface (UI) Developer with 15 years of experience, specializing in Agile methodology, branding, and User Experience (UX) Design, I have a strong history of working with diverse technical teams to create scalable code and web/mobile solutions.</p>
-        <p>I am adept at managing stakeholder expectations throughout all phases of the project lifecycle, striving for excellence in every brand and UI development endeavor.</p>
-        <p>Currently working at BlueCloud.</p>
-      </div>
-      <div class="bio-divider"></div>
-      <div class="bio-photo">
-        <img src="assets/images/photo.jpeg" alt="Aylin Ulaba" />
-      </div>
-    </div>
-  </div>
-
-  <section class="work-box first-work-box">
-    <div class="work-section">
-      <div class="work-slider">
-        <div class="work-slider__viewport">
-          <div class="work-slider__track">
-            <div class="work-slide"><img src="assets/works/slides/aembit-1.png" alt="aembit"></div>
-            <div class="work-slide"><img src="assets/works/slides/aembit-2.png" alt="aembit"></div>
-          </div>
-          <button class="work-nav work-nav--prev" aria-label="Previous">‹</button>
-          <button class="work-nav work-nav--next" aria-label="Next">›</button>
-          <div class="work-dots" aria-label="Slide indicators"></div>
-        </div>
-      </div>
-
-      <div class="work-meta">
-        <div class="work-titlewrap">
-          <h3 class="work-title">aembit — Workload Identity and Access Management Platform</h3>
-          <p class="work-caption">Brand Identity, UX/UI Design, UI Development</p>
-          <a class="work-link" href="case-study/aembit.html" rel="noopener">
-            View project details
-            <svg class="icon-arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M5 12h14"></path>
-              <path d="m12 5 7 7-7 7"></path>
-            </svg>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="work-box work-box--right second-work-box">
-    <div class="work-section">
-      <div class="work-slider">
-        <div class="work-slider__viewport">
-          <div class="work-slider__track">
-            <div class="work-slide"><img src="assets/works/slides/apollo-1.png" alt="apollo"></div>
-            <div class="work-slide"><img src="assets/works/slides/apollo-2.png" alt="apollo"></div>
-          </div>
-          <button class="work-nav work-nav--prev" aria-label="Previous">‹</button>
-          <button class="work-nav work-nav--next" aria-label="Next">›</button>
-          <div class="work-dots" aria-label="Slide indicators"></div>
-        </div>
-      </div>
-
-      <div class="work-meta">
-        <div class="work-titlewrap">
-          <h3 class="work-title">Apollo — AI Outbound Engine for B2B Sales</h3>
-          <p class="work-caption">Brand Identity, UX/UI Design, UI Development</p>
-          <a class="work-link" href="case-study/apollo.html" rel="noopener">
-            View project details
-            <svg class="icon-arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M5 12h14"></path>
-              <path d="m12 5 7 7-7 7"></path>
-            </svg>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="work-box third-work-box">
-    <div class="work-section">
-      <div class="work-slider">
-        <div class="work-slider__viewport">
-          <div class="work-slider__track">
-            <div class="work-slide"><img src="assets/works/slides/hubspace-1.png" alt="hubspace"></div>
-            <div class="work-slide"><img src="assets/works/slides/hubspace-2.png" alt="hubspace"></div>
-          </div>
-          <button class="work-nav work-nav--prev" aria-label="Previous">‹</button>
-          <button class="work-nav work-nav--next" aria-label="Next">›</button>
-          <div class="work-dots" aria-label="Slide indicators"></div>
-        </div>
-      </div>
-
-      <div class="work-meta">
-        <div class="work-titlewrap">
-          <h3 class="work-title">Hubspace — Smart Home Management Application</h3>
-          <p class="work-caption">Brand Identity, UX/UI Design</p>
-          <a class="work-link" href="case-study/hubspace.html" rel="noopener">
-            View project details
-            <svg class="icon-arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M5 12h14"></path>
-              <path d="m12 5 7 7-7 7"></path>
-            </svg>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="work-box work-box--right fourth-work-box">
-    <div class="work-section">
-      <div class="work-slider">
-        <div class="work-slider__viewport">
-          <div class="work-slider__track">
-            <div class="work-slide"><img src="assets/works/slides/koppico-1.png" alt="koppico"></div>
-            <div class="work-slide"><img src="assets/works/slides/koppico-2.png" alt="koppico"></div>
-          </div>
-          <button class="work-nav work-nav--prev" aria-label="Previous">‹</button>
-          <button class="work-nav work-nav--next" aria-label="Next">›</button>
-          <div class="work-dots" aria-label="Slide indicators"></div>
-        </div>
-      </div>
-
-      <div class="work-meta">
-        <div class="work-titlewrap">
-          <h3 class="work-title">Koppico</h3>
-          <p class="work-caption">Brand Identity</p>
-          <a class="work-link" href="case-study/koppico.html" rel="noopener">
-            View project details
-            <svg class="icon-arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M5 12h14"></path>
-              <path d="m12 5 7 7-7 7"></path>
-            </svg>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="work-box fifth-work-box">
-    <div class="work-section">
-      <div class="work-slider">
-        <div class="work-slider__viewport">
-          <div class="work-slider__track">
-            <div class="work-slide"><img src="assets/works/slides/komma-1.png" alt="komma"></div>
-            <div class="work-slide"><img src="assets/works/slides/komma-2.png" alt="komma"></div>
-          </div>
-          <button class="work-nav work-nav--prev" aria-label="Previous">‹</button>
-          <button class="work-nav work-nav--next" aria-label="Next">›</button>
-          <div class="work-dots" aria-label="Slide indicators"></div>
-        </div>
-      </div>
-
-      <div class="work-meta">
-        <div class="work-titlewrap">
-          <h3 class="work-title">Komma — Notes and Task Management Application</h3>
-          <p class="work-caption">Brand Identity, Product Design</p>
-          <a class="work-link" href="case-study/komma.html" rel="noopener">
-            View project details
-            <svg class="icon-arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M5 12h14"></path>
-              <path d="m12 5 7 7-7 7"></path>
-            </svg>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="work-box work-box--right sixth-work-box">
-    <div class="work-section">
-      <div class="work-slider">
-        <div class="work-slider__viewport">
-          <div class="work-slider__track">
-            <div class="work-slide"><img src="assets/works/slides/a-fucking-good-coffee-1.png" alt="a f*cking good coffee"></div>
-            <div class="work-slide"><img src="assets/works/slides/a-fucking-good-coffee-2.png" alt="a f*cking good coffee"></div>
-          </div>
-          <button class="work-nav work-nav--prev" aria-label="Previous">‹</button>
-          <button class="work-nav work-nav--next" aria-label="Next">›</button>
-          <div class="work-dots" aria-label="Slide indicators"></div>
-        </div>
-      </div>
-
-      <div class="work-meta">
-        <div class="work-titlewrap">
-          <h3 class="work-title">A f*cking good coffee</h3>
-          <p class="work-caption">Brand Identity</p>
-          <a class="work-link" href="case-study/a-fucking-good-coffee.html" rel="noopener">
-            View project details
-            <svg class="icon-arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M5 12h14"></path>
-              <path d="m12 5 7 7-7 7"></path>
-            </svg>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="work-box seventh-work-box">
-    <div class="work-section">
-      <div class="work-slider">
-        <div class="work-slider__viewport">
-          <div class="work-slider__track">
-            <div class="work-slide"><img src="assets/works/slides/berabucks-1.png" alt="berabucks"></div>
-            <div class="work-slide"><img src="assets/works/slides/berabucks-2.png" alt="berabucks"></div>
-          </div>
-          <button class="work-nav work-nav--prev" aria-label="Previous">‹</button>
-          <button class="work-nav work-nav--next" aria-label="Next">›</button>
-          <div class="work-dots" aria-label="Slide indicators"></div>
-        </div>
-      </div>
-
-      <div class="work-meta">
-        <div class="work-titlewrap">
-          <h3 class="work-title">Berabucks — Blockchain System For Gamers</h3>
-          <p class="work-caption">Brand Identity, UX/UI Design, UI Development</p>
-          <a class="work-link" href="case-study/berabucks.html" rel="noopener">
-            View project details
-            <svg class="icon-arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M5 12h14"></path>
-              <path d="m12 5 7 7-7 7"></path>
-            </svg>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="work-box work-box--right eighth-work-box">
-    <div class="work-section">
-      <div class="work-slider">
-        <div class="work-slider__viewport">
-          <div class="work-slider__track">
-            <div class="work-slide"><img src="assets/works/slides/mediflow-1.png" alt="mediflow"></div>
-            <div class="work-slide"><img src="assets/works/slides/mediflow-2.png" alt="mediflow"></div>
-          </div>
-          <button class="work-nav work-nav--prev" aria-label="Previous">‹</button>
-          <button class="work-nav work-nav--next" aria-label="Next">›</button>
-          <div class="work-dots" aria-label="Slide indicators"></div>
-        </div>
-      </div>
-
-      <div class="work-meta">
-        <div class="work-titlewrap">
-          <h3 class="work-title">Mediflow — Healthcare Management Dashboard</h3>
-          <p class="work-caption">Brand Identity, Product Design</p>
-          <a class="work-link" href="case-study/mediflow.html" rel="noopener">
-            View project details
-            <svg class="icon-arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M5 12h14"></path>
-              <path d="m12 5 7 7-7 7"></path>
-            </svg>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="work-box ninth-work-box">
-    <div class="work-section">
-      <div class="work-slider">
-        <div class="work-slider__viewport">
-          <div class="work-slider__track">
-            <div class="work-slide"><img src="assets/works/slides/gunseven-1.png" alt="Gunseven"></div>
-            <div class="work-slide"><img src="assets/works/slides/gunseven-2.png" alt="Gunseven"></div>
-          </div>
-          <button class="work-nav work-nav--prev" aria-label="Previous">‹</button>
-          <button class="work-nav work-nav--next" aria-label="Next">›</button>
-          <div class="work-dots" aria-label="Slide indicators"></div>
-        </div>
-      </div>
-
-      <div class="work-meta">
-        <div class="work-titlewrap">
-          <h3 class="work-title">Günseven</h3>
-          <p class="work-caption">Brand Identity, UI Design</p>
-          <a class="work-link" href="case-study/gunseven.html" rel="noopener">
-            View project details
-            <svg class="icon-arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M5 12h14"></path>
-              <path d="m12 5 7 7-7 7"></path>
-            </svg>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="work-box work-box--right tenth-work-box">
-    <div class="work-section">
-      <div class="work-slider">
-        <div class="work-slider__viewport">
-          <div class="work-slider__track">
-            <div class="work-slide"><img src="assets/works/slides/trackfit-1.png" alt="trackfit"></div>
-            <div class="work-slide"><img src="assets/works/slides/trackfit-2.png" alt="trackfit"></div>
-          </div>
-          <button class="work-nav work-nav--prev" aria-label="Previous">‹</button>
-          <button class="work-nav work-nav--next" aria-label="Next">›</button>
-          <div class="work-dots" aria-label="Slide indicators"></div>
-        </div>
-      </div>
-
-      <div class="work-meta">
-        <div class="work-titlewrap">
-          <h3 class="work-title">TrackFit — Habit and Fitness Tracking Application</h3>
-          <p class="work-caption">Brand Identity, Product Design</p>
-          <a class="work-link" href="case-study/trackfit.html" rel="noopener">
-            View project details
-            <svg class="icon-arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M5 12h14"></path>
-              <path d="m12 5 7 7-7 7"></path>
-            </svg>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="work-box eleventh-work-box">
-    <div class="work-section">
-      <div class="work-slider">
-        <div class="work-slider__viewport">
-          <div class="work-slider__track">
-            <div class="work-slide"><img src="assets/works/slides/fleurea-1.png" alt="fleurea"></div>
-            <div class="work-slide"><img src="assets/works/slides/fleurea-2.png" alt="fleurea"></div>
-          </div>
-          <button class="work-nav work-nav--prev" aria-label="Previous">‹</button>
-          <button class="work-nav work-nav--next" aria-label="Next">›</button>
-          <div class="work-dots" aria-label="Slide indicators"></div>
-        </div>
-      </div>
-
-      <div class="work-meta">
-        <div class="work-titlewrap">
-          <h3 class="work-title">Fleurea</h3>
-          <p class="work-caption">Brand Identity</p>
-          <a class="work-link" href="case-study/fleurea.html" rel="noopener">
-            View project details
-            <svg class="icon-arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M5 12h14"></path>
-              <path d="m12 5 7 7-7 7"></path>
-            </svg>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="work-box work-box--right twelfth-work-box">
-    <div class="work-section">
-      <div class="work-slider">
-        <div class="work-slider__viewport">
-          <div class="work-slider__track">
-            <div class="work-slide"><img src="assets/works/slides/world-of-monsters-1.png" alt="World of Monsters"></div>
-            <div class="work-slide"><img src="assets/works/slides/world-of-monsters-2.png" alt="World of Monsters"></div>
-          </div>
-          <button class="work-nav work-nav--prev" aria-label="Previous">‹</button>
-          <button class="work-nav work-nav--next" aria-label="Next">›</button>
-          <div class="work-dots" aria-label="Slide indicators"></div>
-        </div>
-      </div>
-
-      <div class="work-meta">
-        <div class="work-titlewrap">
-          <h3 class="work-title">World of Monsters — Mobile Game</h3>
-          <p class="work-caption">Game Design</p>
-          <a class="work-link" href="case-study/world-of-monsters.html" rel="noopener">
-            View project details
-            <svg class="icon-arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M5 12h14"></path>
-              <path d="m12 5 7 7-7 7"></path>
-            </svg>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="work-box thirteenth-work-box">
-    <div class="work-section">
-      <div class="work-slider">
-        <div class="work-slider__viewport">
-          <div class="work-slider__track">
-            <div class="work-slide"><img src="assets/works/slides/kokkopi-1.png" alt="kokkopi"></div>
-            <div class="work-slide"><img src="assets/works/slides/kokkopi-2.png" alt="kokkopi"></div>
-          </div>
-          <button class="work-nav work-nav--prev" aria-label="Previous">‹</button>
-          <button class="work-nav work-nav--next" aria-label="Next">›</button>
-          <div class="work-dots" aria-label="Slide indicators"></div>
-        </div>
-      </div>
-
-      <div class="work-meta">
-        <div class="work-titlewrap">
-          <h3 class="work-title">kokköpi</h3>
-          <p class="work-caption">Brand Identity, Product Design</p>
-          <a class="work-link" href="case-study/kokkopi.html" rel="noopener">
-            View project details
-            <svg class="icon-arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M5 12h14"></path>
-              <path d="m12 5 7 7-7 7"></path>
-            </svg>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="work-box work-box--right fourteenth-work-box">
-    <div class="work-section">
-      <div class="work-slider">
-        <div class="work-slider__viewport">
-          <div class="work-slider__track">
-            <div class="work-slide"><img src="assets/works/slides/serviscell-1.png" alt="serviscell"></div>
-            <div class="work-slide"><img src="assets/works/slides/serviscell-2.png" alt="serviscell"></div>
-          </div>
-          <button class="work-nav work-nav--prev" aria-label="Previous">‹</button>
-          <button class="work-nav work-nav--next" aria-label="Next">›</button>
-          <div class="work-dots" aria-label="Slide indicators"></div>
-        </div>
-      </div>
-
-      <div class="work-meta">
-        <div class="work-titlewrap">
-          <h3 class="work-title">Serviscell — Automatic and Instant Parent Information System</h3>
-          <p class="work-caption">UX/UI Design</p>
-          <a class="work-link" href="case-study/serviscell.html" rel="noopener">
-            View project details
-            <svg class="icon-arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M5 12h14"></path>
-              <path d="m12 5 7 7-7 7"></path>
-            </svg>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="work-box fifteenth-work-box">
-    <div class="work-section">
-      <div class="work-slider">
-        <div class="work-slider__viewport">
-          <div class="work-slider__track">
-            <div class="work-slide"><img src="assets/works/slides/sodek-1.png" alt="sodek"></div>
-            <div class="work-slide"><img src="assets/works/slides/sodek-2.png" alt="sodek"></div>
-          </div>
-          <button class="work-nav work-nav--prev" aria-label="Previous">‹</button>
-          <button class="work-nav work-nav--next" aria-label="Next">›</button>
-          <div class="work-dots" aria-label="Slide indicators"></div>
-        </div>
-      </div>
-
-      <div class="work-meta">
-        <div class="work-titlewrap">
-          <h3 class="work-title">Sodek</h3>
-          <p class="work-caption">Brand Identity</p>
-          <a class="work-link" href="case-study/sodek.html" rel="noopener">
-            View project details
-            <svg class="icon-arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M5 12h14"></path>
-              <path d="m12 5 7 7-7 7"></path>
-            </svg>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="work-box work-box--right sixteenth-work-box">
-    <div class="work-section">
-      <div class="work-slider">
-        <div class="work-slider__viewport">
-          <div class="work-slider__track">
-            <div class="work-slide"><img src="assets/works/slides/erasmusport-1.png" alt="erasmusport"></div>
-            <div class="work-slide"><img src="assets/works/slides/erasmusport-2.png" alt="erasmusport"></div>
-          </div>
-          <button class="work-nav work-nav--prev" aria-label="Previous">‹</button>
-          <button class="work-nav work-nav--next" aria-label="Next">›</button>
-          <div class="work-dots" aria-label="Slide indicators"></div>
-        </div>
-      </div>
-
-      <div class="work-meta">
-        <div class="work-titlewrap">
-          <h3 class="work-title">erasmusport — Erasmus Online Management System</h3>
-          <p class="work-caption">UX/UI Design</p>
-          <a class="work-link" href="case-study/erasmusport.html" rel="noopener">
-            View project details
-            <svg class="icon-arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M5 12h14"></path>
-              <path d="m12 5 7 7-7 7"></path>
-            </svg>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="work-box seventeenth-work-box">
-    <div class="work-section">
-      <div class="work-slider">
-        <div class="work-slider__viewport">
-          <div class="work-slider__track">
-            <div class="work-slide"><img src="assets/works/slides/nerede-ne-yenir-1.png" alt="nerede ne yenir"></div>
-            <div class="work-slide"><img src="assets/works/slides/nerede-ne-yenir-2.png" alt="nerede ne yenir"></div>
-          </div>
-          <button class="work-nav work-nav--prev" aria-label="Previous">‹</button>
-          <button class="work-nav work-nav--next" aria-label="Next">›</button>
-          <div class="work-dots" aria-label="Slide indicators"></div>
-        </div>
-      </div>
-
-      <div class="work-meta">
-        <div class="work-titlewrap">
-          <h3 class="work-title">Nerede Ne Yenir? — Restaurant Guide and Finder</h3>
-          <p class="work-caption">Product Design</p>
-          <a class="work-link" href="case-study/nerede-ne-yenir.html" rel="noopener">
-            View project details
-            <svg class="icon-arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M5 12h14"></path>
-              <path d="m12 5 7 7-7 7"></path>
-            </svg>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="footer-box">
-    <div class="footer-thanks">
-      <h2 class="footer-thanks__title">Thank you for<br>visiting the house.</h2>
-      <span class="footer-thanks__divider"></span>
-      <img src="assets/images/symbol-red.png" alt="symbol" class="footer-symbol" />
-
-      <div class="footer-thanks__grid">
-        <div class="thanks-arch">
-          <ul class="thanks-arch__list">
-            <li><a href="soon.html">Lunae Studio</a></li>
-            <li><a href="soon.html">Color Inspiration</a></li>
-            <li>•</li>
-            <li><a href="https://medium.com/@aylinulaba" target="_blank">Medium</a></li>
-            <li><a href="https://open.spotify.com/user/31fv2d7hqctaf43vvbjq7qyuy2jm?si=a7f711ceec874082" target="_blank">Spotify</a></li>
-          </ul>
-        </div>
-
-        <div class="thanks-arch">
-          <ul class="thanks-arch__list">
-            <li><a href="https://linkedin.com/in/aylinulaba" target="_blank">LinkedIn</a></li>
-            <li><a href="https://github.com/aylinulaba" target="_blank">GitHub</a></li>
-            <li>•</li>
-            <li><a href="https://www.pinterest.com/aylin_ulaba/" target="_blank">Pinterest</a></li>
-            <li><a href="https://instagram.com/aylin.ulaba" target="_blank">Instagram</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <button class="index-button" id="indexButton">
-    <span class="index-button__circle">
-      <img src="assets/images/symbol-white.png" alt="symbol" />
-    </span>
-    <span>INDEX</span>
-  </button>
-
-  <div class="index-menu" id="indexMenu">
-    <div class="index-menu__inner">
-      <a href="#" class="index-menu__back">← BACK TO HOMEPAGE</a>
-      <button class="index-menu__close" id="indexClose">×</button>
-      <div class="index-menu__grid">
-        <div class="index-menu__col">
-          <p>01 <a href="soon.html">Essentials</a></p>
-          <p>02 <a href="soon.html">Essays</a></p>
-          <p>03 <a href="soon.html">The Weekly</a></p>
-          <a href="soon.html" class="index-menu__cta index-menu__cta--inline">JOIN MY NEWSLETTER</a>
-        </div>
-        <div class="index-menu__col">
-          <p>04 <a href="soon.html">The praxis</a></p>
-          <p>05 <a href="soon.html">Artifacts</a></p>
-          <p>06 <a href="soon.html">Archive</a></p>
-        </div>
-        <div class="index-menu__col index-menu__more">
-          <h4>MORE</h4>
-          <ul>
-            <li><a href="soon.html">Recommendations</a></li>
-            <li><a href="soon.html">Inspiring Quotes</a></li>
-            <li><a href="soon.html">Playlists</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <script type="module" src="./app.js"></script>
 </body>
 </html>
