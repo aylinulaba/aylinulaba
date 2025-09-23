@@ -1,0 +1,148 @@
+/* Extra large devices (very wide screens) */
+@media (min-width: 1440px) {
+  /* styles */
+}
+
+/* Large devices (laptops) */
+@media (max-width: 1024px) {
+  /* Photo Archive */
+  .masonry {
+    column-count: 2;
+  }
+
+  /* Color Inspiration */
+  .color-inspiration .palette {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Between tablet and small laptop */
+@media (max-width: 992px) {
+  /* styles */
+}
+
+/* Medium devices (small tablets) */
+@media (max-width: 768px) {
+  /* Praxis */
+  .praxis-grid {
+    grid-template-columns: 1fr;
+  }
+  .praxis-left {
+    position: static;
+    top: auto;
+  }
+  .praxis-right {
+    align-items: flex-start;
+  }
+  .arrow-down,
+  .arrow-up {
+    margin: 20px auto;
+  }
+
+  /* Project */
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+  .project-left {
+    position: static;
+    top: auto;
+  }
+  .project-right {
+    align-items: flex-start;
+  }
+
+  /* Archive Detail */
+  .archive-detail-grid {
+    grid-template-columns: 1fr;
+  }
+  .archive-detail-left {
+    position: static;
+    top: auto;
+  }
+  .archive-detail-right {
+    align-items: flex-start;
+  }
+
+  /* Archive */
+  .archive-grid {
+    grid-template-columns: 1fr;
+  }
+  .arch-card {
+    border-left: none !important;
+    padding-left: 0 !important;
+  }
+  .arch-card:nth-child(n+2) {
+    border-top: 2px solid var(--zinc-900);
+  }
+  .arch-title {
+    font-size: 34px;
+    margin-left: 0 !important;
+  }
+
+  /* Brain Output */
+  .ia-clip {
+    height: 100px;
+    --ia-shift: -213px;
+  }
+}
+
+/* Small devices (phones) */
+@media (max-width: 576px) {
+  /* Base */
+  body {
+    padding: 0 15px;
+  }
+
+  /* Header */
+  .site-head {
+    top: 0
+  }
+  .site-nav {
+    flex-wrap: nowrap;
+  }
+  .menu-left,
+  .menu-right {
+    gap: 10px;
+  }
+  .site-nav a {
+    font-size: 12px;
+  }
+
+  /* Praxis */
+  .arrow-down,
+  .arrow-up {
+    width: 320px;
+    margin: 40px auto;
+  }
+
+  /* Photo Archive */
+  .masonry {
+    column-count: 1;
+  }
+
+  /* Color Inspiration */
+  .color-inspiration .palette {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 350px) {
+  /* Header */
+  .site-head {
+    top: 0;
+  }
+  .menu-left,
+  .menu-right {
+    gap: 10px;
+  }
+  .site-nav a {
+    font-size: 11px;
+  }
+
+  /* Praxis */
+  .arrow-down,
+  .arrow-up {
+    width: 260px;
+    margin: 30px auto;
+  }
+}

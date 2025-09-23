@@ -1,0 +1,63 @@
+/* Base // Color System, Typography, Layout */
+:root {
+    --red-50: #fef2f2;
+    --red-100: #ffe2e2;
+    --red-200: #ffc9c9;
+    --red-300: #ffa2a2;
+    --red-400: #ff6467;
+    --red-500: #fb2c36; /* Accent */
+    --red-600: #e7000b;
+    --red-700: #c10007;
+    --red-800: #9f0712;
+    --red-900: #82181a;
+    --red-950: #460809;
+
+    --zinc-50: #fafafa;
+    --zinc-100: #f4f4f5;
+    --zinc-200: #e4e4e7;
+    --zinc-300: #d4d4d8;
+    --zinc-400: #9f9fa9;
+    --zinc-500: #71717b;
+    --zinc-600: #52525c;
+    --zinc-700: #3f3f46;
+    --zinc-800: #27272a; /* Primary */
+    --zinc-900: #18181b;
+    --zinc-950: #09090b;
+}
+
+::selection {
+    background: var(--zinc-800);
+    color: var(--zinc-300);
+}
+
+::-moz-selection {
+    background: var(--zinc-800);
+    color: var(--zinc-300);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+*,
+html,
+body,
+a,
+button {
+    cursor: crosshair;
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--zinc-50);
+    color: var(--zinc-800);
+    min-height: 100vh;
+    margin: 0;
+    padding: 0 40px 40px 40px;
+}
