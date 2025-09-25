@@ -733,6 +733,7 @@
     font-size: 14px;
     font-weight: 300;
 }
+
 .illustration-link .title {
     font-size: 28px;
 }
@@ -960,17 +961,46 @@
     text-transform: uppercase;
 }
 
-/* Coming Soon */
-.coming-soon {
+/* Playground */
+.playground {
     padding-top: 20px;
 }
 
-.coming-soon p {
-    font-family: 'Roboto Mono', monospace;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.6;
-    letter-spacing: .02em;
-    color: var(--zinc-800);
+.playground-list {
+    list-style: none;
     margin: 0;
+    padding: 0;
+}
+
+.playground-list li {
+    margin-bottom: 30px;
+}
+
+.playground-list .category {
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    color: var(--zinc-500);
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.playground-link {
+    display: flex;
+    align-items: baseline;
+    gap: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    text-decoration: none;
+    color: inherit;
+}
+
+.playground-link .year {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.playground-link .title {
+    font-size: 28px;
 }
