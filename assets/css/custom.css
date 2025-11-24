@@ -31,7 +31,8 @@
 }
 
 .site-nav a {
-    font-family: 'Roboto Mono',monospace;
+    font-family: "SohneKraft", sans-serif;
+    font-weight: 600;
     font-size: 14px;
     text-transform: uppercase;
     color: var(--zinc-800);
@@ -101,7 +102,7 @@
 /* Praxis */
 .praxis {
     padding: 20px 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: "SohneLight", sans-serif;
     font-weight: 400;
 }
 
@@ -314,7 +315,7 @@
 
 .projects-list .category {
     display: block;
-    font-family: 'Roboto', sans-serif;
+    font-family: "SohneBook", sans-serif;
     font-size: 11px;
     font-weight: 400;
     color: var(--zinc-500);
@@ -326,8 +327,8 @@
     display: flex;
     align-items: baseline;
     gap: 15px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 800;
+    font-family: "SohneKraft", sans-serif;
+    font-weight: 600;
     text-decoration: none;
     color: inherit;
 }
@@ -343,7 +344,7 @@
 /* Project */
 .project {
     padding-top: 20px;
-    font-family: 'Roboto', sans-serif;
+    font-family: "SohneLight", sans-serif;
     font-weight: 400;
 }
 
@@ -374,17 +375,18 @@
 }
 
 .project-title {
-    font-family: 'Roboto', sans-serif;
+    font-family: "SohneKraft", sans-serif;
     color: var(--zinc-800);
     font-size: 50px;
     line-height: 0.5;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .project-meta {
-    font-family: 'Roboto Mono', monospace;
+    font-family: "SohneLight", sans-serif;
     color: var(--zinc-800);
     padding-bottom: 20px;
+    font-weight: 400;
 }
 
 .meta-row {
@@ -409,7 +411,6 @@
 .meta-value a {
     font-size: 15px;
     font-weight: 400;
-    letter-spacing: -1px;
     color: var(--zinc-800);
     transition: background-color 0.2s ease;
 }
@@ -435,10 +436,9 @@
     display: inline-flex;
     align-items: center;
     gap: 6px;
-    font-family: 'Roboto Mono', monospace;
+    font-family: "SohneLight", sans-serif;
     font-weight: 400;
     font-size: 15px;
-    letter-spacing: -1.3px;
     color: var(--zinc-800);
     text-decoration: none;
     transition: color 0.3s ease;
@@ -493,8 +493,8 @@
 }
 
 .arch-title {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 600;
+    font-family: "SohneLight", sans-serif;
+    font-weight: 500;
     font-size: 45px;
     color: var(--zinc-800);
     text-transform: uppercase;
@@ -612,7 +612,7 @@
 
 .brain-list .category {
     display: block;
-    font-family: 'Roboto', sans-serif;
+    font-family: "SohneLight", sans-serif;
     font-size: 11px;
     font-weight: 400;
     color: var(--zinc-500);
@@ -624,15 +624,15 @@
     display: flex;
     align-items: baseline;
     gap: 15px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 800;
+    font-family: "SohneLight", sans-serif;
+    font-weight: 600;
     text-decoration: none;
     color: inherit;
 }
 
 .brain-link .year {
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 400;
 }
 .brain-link .title {
     font-size: 28px;
@@ -687,7 +687,7 @@
 
 .illustration-list .category {
     display: block;
-    font-family: 'Roboto', sans-serif;
+    font-family: "SohneLight", sans-serif;
     font-size: 11px;
     font-weight: 400;
     color: var(--zinc-500);
@@ -699,8 +699,8 @@
     display: flex;
     align-items: baseline;
     gap: 15px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 800;
+    font-family: "SohneKraft", sans-serif;
+    font-weight: 600;
     text-decoration: none;
     color: inherit;
 }
@@ -898,8 +898,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    font-family: 'Roboto Mono', monospace;
-    letter-spacing: .08em;
+    font-family: "SohneBook", sans-serif;
     text-transform: uppercase;
     font-size: 14px;
     opacity: .95;
@@ -909,8 +908,8 @@
     position: absolute;
     right: 22px;
     bottom: 84px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 800;
+    font-family: "SohneKraft", sans-serif;
+    font-weight: 600;
     font-size: clamp(64px, 15vw, 220px);
     line-height: .8;
     color: var(--accent);
@@ -954,7 +953,7 @@
 
 .playground-list .category {
     display: block;
-    font-family: 'Roboto', sans-serif;
+    font-family: "SohneLight", sans-serif;
     font-size: 11px;
     font-weight: 400;
     color: var(--zinc-500);
@@ -966,8 +965,8 @@
     display: flex;
     align-items: baseline;
     gap: 15px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 800;
+    font-family: "SohneKraft", sans-serif;
+    font-weight: 600;
     text-decoration: none;
     color: inherit;
 }

@@ -1,4 +1,22 @@
 /* Base */
+@font-face {
+    font-family: "SohneBook";
+    src: url("/assets/fonts/Sohne-Book.otf") format("opentype");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SohneKraft";
+    src: url("/assets/fonts/Sohne-Kraft.otf") format("opentype");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SohneLight";
+    src: url("/assets/fonts/Sohne-Light.otf") format("opentype");
+    font-style: normal;
+}
+
 :root {
     --red-50: #fef2f3;
     --red-100: #ffe1e2;
