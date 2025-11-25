@@ -1,11 +1,5 @@
 /* Base */
 @font-face {
-    font-family: "SohneBook";
-    src: url("/assets/fonts/Sohne-Book.otf") format("opentype");
-    font-style: normal;
-}
-
-@font-face {
     font-family: "SohneKraft";
     src: url("/assets/fonts/Sohne-Kraft.otf") format("opentype");
     font-style: normal;
