@@ -1,4 +1,3 @@
-import React from "react";
 import { FiArrowLeft } from "react-icons/fi";
 import Img01 from "../../assets/works/kokkopi/01.png";
 import Img02 from "../../assets/works/kokkopi/02.png";

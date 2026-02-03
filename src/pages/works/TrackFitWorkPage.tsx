@@ -1,4 +1,3 @@
-import React from "react";
 import { FiArrowLeft } from "react-icons/fi";
 import Img01 from "../../assets/works/trackfit/01.png";
 import Img02 from "../../assets/works/trackfit/02.png";

@@ -1,4 +1,3 @@
-import React from "react";
 import { FiArrowLeft } from "react-icons/fi";
 import Img01 from "../../assets/works/sodek/01.jpg";
 import Img02 from "../../assets/works/sodek/02.jpg";

@@ -6,10 +6,6 @@ type PostMeta = {
   tags: string[];
 };
 
-function Divider() {
-  return <div className="h-px origin-top scale-y-50 bg-base-950/50" />;
-}
-
 export default function ConsciousDifficulty() {
   const meta: PostMeta = {
     readingTime: "8 min",
