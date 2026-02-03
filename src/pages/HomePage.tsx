@@ -1,4 +1,4 @@
-import Illustration from "../assets/illustrations/aylin.svg";
+import Illustration from "../assets/illustrations/Aylin.svg";
 
 export default function HomePage() {
   return (
