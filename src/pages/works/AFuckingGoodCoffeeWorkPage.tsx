@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { FiArrowLeft } from "react-icons/fi";
 import Img01 from "../../assets/works/afgc/01.png";
 import Img02 from "../../assets/works/afgc/02.png";
@@ -142,8 +143,8 @@ export default function AembitWorkPage() {
           </div>
 
           <div className="mt-10">
-            <a
-              href="/work"
+            <Link
+              to="/work"
               className={[
                 "group inline-flex items-center gap-2",
                 "text-15 font-extralight text-base-950",
@@ -153,7 +154,7 @@ export default function AembitWorkPage() {
             >
               <FiArrowLeft className="h-4 w-4 text-base-950 transition-transform duration-150 ease-out group-hover:-translate-x-1" />
               <span>return to selected works</span>
-            </a>
+            </Link>
           </div>
         </div>
 

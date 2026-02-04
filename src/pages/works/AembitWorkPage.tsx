@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { FiArrowLeft } from "react-icons/fi";
 import Img01 from "../../assets/works/aembit/01.png";
 import Img02 from "../../assets/works/aembit/02.png";
@@ -49,17 +50,19 @@ export default function AembitWorkPage() {
       <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
         {/* LEFT (sticky) */}
         <div className="min-w-0 md:sticky md:top-[150px] md:self-start">
-          <h1 className="text-[48px] font-medium leading-none text-base-800">aembit</h1>
+          <h1 className="text-[48px] font-medium leading-none text-base-800">
+            aembit
+          </h1>
 
           <div className="mt-8">
-            {/* meta row */}
             <div className="grid grid-cols-2 gap-8">
               {meta.map((m) => (
                 <div
                   key={m.label}
-                  className={["min-w-0", m.label === "CLIENT" ? "justify-self-end text-right" : ""].join(
-                    " "
-                  )}
+                  className={[
+                    "min-w-0",
+                    m.label === "CLIENT" ? "justify-self-end text-right" : ""
+                  ].join(" ")}
                 >
                   <div className="text-12 font-medium uppercase tracking-wide text-base-500">
                     {m.label}
@@ -94,28 +97,29 @@ export default function AembitWorkPage() {
 
           <div className="mt-6 space-y-6 text-15 font-extralight text-base-800">
             <p>
-              Aembit is a platform that automates authentication and authorization for microservices,
-              APIs, and applications operating in cloud environments. Moving beyond traditional static
-              key or certificate approaches, it enables secure and flexible communication between
-              services, operating under zero trust principles. Every request is policy-driven,
-              ensuring only authorized services can interact.
+              Aembit is a platform that automates authentication and authorization
+              for microservices, APIs, and applications operating in cloud
+              environments. Moving beyond traditional static key or certificate
+              approaches, it enables secure and flexible communication between
+              services, operating under zero trust principles.
             </p>
             <p>
-              The platform supports multiple cloud providers (AWS, GCP, Azure), integrates with
-              Kubernetes, and works seamlessly with CI/CD workflows. Features such as logging,
-              monitoring, and policy management give technical teams full control over system
-              security.
+              The platform supports multiple cloud providers (AWS, GCP, Azure),
+              integrates with Kubernetes, and works seamlessly with CI/CD
+              workflows. Features such as logging, monitoring, and policy
+              management give technical teams full control over system security.
             </p>
             <p>
               <span className="font-medium">Core Stack:</span>{" "}
-              Adobe Creative Cloud, Figma, Storybook, Docusaurus, Metronic UI, Material UI, HTML,
-              Tailwind CSS, JavaScript, React.js, Typescript, Postman, CI/CD
+              Adobe Creative Cloud, Figma, Storybook, Docusaurus, Metronic UI,
+              Material UI, HTML, Tailwind CSS, JavaScript, React.js, Typescript,
+              Postman, CI/CD
             </p>
           </div>
 
           <div className="mt-10">
-            <a
-              href="/work"
+            <Link
+              to="/work"
               className={[
                 "group inline-flex items-center gap-2",
                 "text-15 font-extralight text-base-950",
@@ -125,7 +129,7 @@ export default function AembitWorkPage() {
             >
               <FiArrowLeft className="h-4 w-4 text-base-950 transition-transform duration-150 ease-out group-hover:-translate-x-1" />
               <span>return to selected works</span>
-            </a>
+            </Link>
           </div>
         </div>
 
