@@ -148,7 +148,7 @@ export default function AboutPage() {
     {
       role: "UI / UX Designer",
       company: "Blue.Cloud",
-      dates: "2024-present",
+      dates: "2024-2026",
       skills:
         "UX Research, Insight Synthesis, User Journeys & Flows, Usability Testing, UI Design, UX Design, Design Systems, Component Libraries, Prototyping, Brand Principles, User Testing Data Interpretation, SQL, Snowflake, UI Development, Dev Documentation, Git, Agile Methodologies"
     },
