@@ -10,15 +10,14 @@ type NavItem = {
 const items: NavItem[] = [
   { label: "ABOUT", to: "/about" },
   { label: "WORK", to: "/work" },
-  { label: "BLOG", to: "/blog" },
-  { label: "ARCHIVE", to: "https://regular-approach-478341.framer.app/", external: true }
+  { label: "BLOG", to: "/blog" }
 ];
 
 export default function Navbar() {
   return (
     <header className="fixed left-0 right-0 top-0 z-50">
       <nav aria-label="Primary" className="bg-base-50/60 backdrop-blur-[8px]">
-        <div className="px-[50px]">
+        <div className="px-6 md:px-[50px]">
           <ul className="flex items-center gap-6 py-4 md:gap-10">
             {items.map((item) => {
               if (item.external) {

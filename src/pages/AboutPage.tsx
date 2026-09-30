@@ -1,5 +1,5 @@
 import React from "react";
-import { FaLinkedinIn, FaMediumM } from "react-icons/fa";
+import { FaLinkedinIn, FaGithub, FaMediumM } from "react-icons/fa";
 import { FiMail, FiDownload } from "react-icons/fi";
 
 type SocialItem = {
@@ -73,6 +73,12 @@ export default function AboutPage() {
       icon: <FaLinkedinIn className="h-5 w-5" />
     },
     {
+      label: "GitHub",
+      tooltip: "GitHub",
+      href: "https://github.com/aylinulaba",
+      icon: <FaGithub className="h-5 w-5" />
+    },
+    {
       label: "Medium",
       tooltip: "Medium",
       href: "https://medium.com/@aylinulaba",
@@ -102,18 +108,19 @@ export default function AboutPage() {
         "User Journeys & Flows",
         "Usability Testing",
         "Brand Strategy",
-        "Information Architecture"
+        "Information Architecture",
+        "Data-informed Design"
       ]
     },
     {
-      title: "Data-informed design",
+      title: "Marketing",
       items: [
-        "Data Cleaning & Analysis",
-        "Data Visualization for Products",
-        "Data Storytelling",
-        "User Testing Data Interpretation",
-        "SQL",
-        "Snowflake"
+        "Campaign Design",
+        "Social Media Design",
+        "Landing Page Design",
+        "Content Strategy",
+        "Marketing Framework",
+        "Conversion Optimization"
       ]
     }
   ];
@@ -124,6 +131,7 @@ export default function AboutPage() {
       items: [
         "UI Design",
         "UX Design",
+        "Visual Design",
         "Design Systems",
         "Component Libraries",
         "Prototyping",
@@ -137,8 +145,8 @@ export default function AboutPage() {
         "UI Development",
         "Dev Documentation",
         "Git & CI/CD",
-        "API Integration",
-        "Docker",
+        "Design Handoff",
+        "Accessibility (a11y)",
         "Agile Methodologies"
       ]
     }
@@ -146,18 +154,25 @@ export default function AboutPage() {
 
   const experience: ExperienceItem[] = [
     {
+      role: "AI-Driven Digital Designer",
+      company: "BlueNet - cliexa",
+      dates: "2026-present",
+      skills:
+        "Brand Strategy, Visual Design, UI/UX Design, Landing Page Design, Marketing Framework, Marketing Collateral Design, Design Systems, Agile Methodologies"
+    },
+    {
       role: "UI / UX Designer",
-      company: "Blue.Cloud",
+      company: "BlueCloud",
       dates: "2024-2026",
       skills:
-        "UX Research, Insight Synthesis, User Journeys & Flows, Usability Testing, UI Design, UX Design, Design Systems, Component Libraries, Prototyping, Brand Principles, User Testing Data Interpretation, SQL, Snowflake, UI Development, Dev Documentation, Git, Agile Methodologies"
+        "UX Research, Insight Synthesis, Usability Testing, UI/UX Design, Design Systems, Prototyping, Brand Principles, UI Development, Agile Methodologies"
     },
     {
       role: "Designer & UI Developer",
       company: "broadAngle",
       dates: "2019-2024",
       skills:
-        "UX Research, Affinity Diagramming, User Journeys & Flows, Usability Testing, Brand Strategy, Information Architecture, UI Design, UX Design, Design Systems, Component Libraries, Prototyping, Motion for Interaction, Brand Principles, Data Visualization for Products, Data Storytelling, SQL, UI Development, Dev Documentation, Git & CI/CD, API Integration, Docker, Agile Methodologies"
+        "UX Research, Affinity Diagramming, Usability Testing, Brand Strategy, Information Architecture, UI/UX Design, Design Systems, UI Development, Git & CI/CD, Agile Methodologies"
     }
   ];
 
@@ -173,17 +188,18 @@ export default function AboutPage() {
 
           <div className="mt-8 space-y-6 text-15 font-extralight text-base-800">
             <p>
-              As a Designer and User Interface (UI) Developer with over 10 years of experience,
-              specializing in Agile methodology, branding, and User Experience (UX) Design, I have a
-              strong history of working with diverse technical teams to create scalable web and
-              mobile solutions. I design not only interfaces, but also meaningful data
-              visualizations that transform complex information into clear, actionable insights,
-              enabling effective data storytelling across digital products.
+              I'm a Designer and UI Developer with over 10 years of experience across branding,
+              marketing design, User Experience (UX) design, and AI driven design. I partner with
+              diverse technical and business teams to shape scalable web and mobile products, from
+              brand identity and marketing campaigns to interfaces and design systems. I build the
+              frameworks and tools behind that work, automating workflows and adding structure and
+              speed to the design process.
             </p>
             <p>
-              I am adept at managing stakeholder expectations throughout all phases of the project
-              lifecycle, aligning business goals with user needs, and striving for excellence in
-              every brand, UI, and data-driven experience I develop.
+              I care as much about craft as I do about strategy, aligning business goals with user
+              needs and managing stakeholder expectations through every phase of a project. Whether
+              it's a brand system, a product interface, or an automated workflow, I aim for the same
+              thing: design that feels intentional, cohesive, and true to the brand.
             </p>
           </div>
         </div>

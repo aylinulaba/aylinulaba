@@ -27,7 +27,7 @@ export default function RootLayout() {
     <div className="min-h-screen bg-base-50 text-base-800">
       <Navbar />
 
-      <main className="px-[50px] pt-[150px] pb-[50px]">
+      <main className="px-6 pt-[150px] pb-[50px] md:px-[50px]">
         <Outlet />
       </main>
 
