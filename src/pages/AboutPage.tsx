@@ -107,20 +107,22 @@ export default function AboutPage() {
         "Insight Synthesis",
         "User Journeys & Flows",
         "Usability Testing",
-        "Brand Strategy",
         "Information Architecture",
-        "Data-informed Design"
+        "Data-informed Design",
+        "Interaction Design"
       ]
     },
     {
       title: "Marketing",
       items: [
+        "Brand Strategy",
         "Campaign Design",
         "Social Media Design",
         "Landing Page Design",
         "Content Strategy",
-        "Marketing Framework",
-        "Conversion Optimization"
+        "Marketing Frameworks",
+        "Conversion Optimization",
+        "Marketing Collateral"
       ]
     }
   ];
@@ -143,36 +145,38 @@ export default function AboutPage() {
       title: "Design to delivery",
       items: [
         "UI Development",
-        "Dev Documentation",
+        "Development Documentation",
         "Git & CI/CD",
         "Design Handoff",
         "Accessibility (a11y)",
-        "Agile Methodologies"
+        "Agile Methodologies",
+        "AI-Assisted Design",
+        "AI Workflow Automation"
       ]
     }
   ];
 
   const experience: ExperienceItem[] = [
     {
-      role: "AI-Driven Digital Designer",
+      role: "AI-Driven Designer",
       company: "BlueNet - cliexa",
       dates: "2026-present",
       skills:
-        "Brand Strategy, Visual Design, UI/UX Design, Landing Page Design, Marketing Framework, Marketing Collateral Design, Design Systems, Agile Methodologies"
+        "Building and continuously refining an AI-powered marketing and design framework that supports creative production, from campaign assets and design variations to documentation and automated workflows. Developing integrated systems that enhance consistency, scalability, and efficiency across design and production processes."
     },
     {
       role: "UI / UX Designer",
-      company: "BlueCloud",
+      company: "BlueCloud - InXpress",
       dates: "2024-2026",
       skills:
-        "UX Research, Insight Synthesis, Usability Testing, UI/UX Design, Design Systems, Prototyping, Brand Principles, UI Development, Agile Methodologies"
+        "Led UX-focused product redesigns, translating research and usability insights into improved user flows and interfaces. Built scalable design systems to ensure consistency, streamline cross-functional collaboration, and support ongoing product development."
     },
     {
       role: "Designer & UI Developer",
       company: "broadAngle",
       dates: "2019-2024",
       skills:
-        "UX Research, Affinity Diagramming, Usability Testing, Brand Strategy, Information Architecture, UI/UX Design, Design Systems, UI Development, Git & CI/CD, Agile Methodologies"
+        "Designed and developed user interfaces from initial concept to production. Built reusable UI components and maintainable design structures, bridging design and development to deliver consistent, scalable, and user-centered digital products."
     }
   ];
 
@@ -188,18 +192,10 @@ export default function AboutPage() {
 
           <div className="mt-8 space-y-6 text-15 font-extralight text-base-800">
             <p>
-              I'm a Designer and UI Developer with over 10 years of experience across branding,
-              marketing design, User Experience (UX) design, and AI driven design. I partner with
-              diverse technical and business teams to shape scalable web and mobile products, from
-              brand identity and marketing campaigns to interfaces and design systems. I build the
-              frameworks and tools behind that work, automating workflows and adding structure and
-              speed to the design process.
+              I'm a Designer and UI Developer with over 10 years of experience across branding, marketing, and User Experience (UX) design. I partner with diverse technical and business teams to shape scalable products, from brand identity and marketing campaigns to interfaces and design systems. I build the frameworks and tools behind that work, automating workflows and adding structure and speed to the design process.
             </p>
             <p>
-              I care as much about craft as I do about strategy, aligning business goals with user
-              needs and managing stakeholder expectations through every phase of a project. Whether
-              it's a brand system, a product interface, or an automated workflow, I aim for the same
-              thing: design that feels intentional, cohesive, and true to the brand.
+              I care as much about craft as I do about strategy, aligning business goals with user needs and managing stakeholder expectations through every phase of a project. Whether it's a brand system, a product interface, or an automated workflow, I aim for the same thing: design that feels intentional, cohesive, and true to the brand.
             </p>
           </div>
         </div>
@@ -278,7 +274,7 @@ export default function AboutPage() {
                   </div>
 
                   <div className="text-14 font-medium text-base-800">
-                    Key Skills: <span className="font-extralight">{x.skills}</span>
+                    Achievements: <span className="font-extralight">{x.skills}</span>
                   </div>
 
                   {idx !== experience.length - 1 ? <Divider /> : null}
